@@ -1,0 +1,109 @@
+/* Main container */
+.calendar {
+    /*border-top-right-radius: 3%;*/
+    /*border-top-left-radius: 3%;*/
+    border-radius: 3%;
+ }
+
+.calendar table {
+    border-collapse: collapse;
+    border: 1px solid #006699;
+    border-right: none;
+}
+
+.calendar  th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+.calendar  tr:nth-child(even) {
+    background-color: #f0f0f0
+}
+
+.calendar  tr:nth-child(odd) {
+    background-color: #f9f9f9
+}
+
+.calendar  th {
+    background: -webkit-linear-gradient(bottom,  rgba(0,102,153,.75) 20%,rgba(0,102,153,1) 100%);
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Month header */
+.month {
+    width: 100%;
+    /*background: #4a77d4;*/
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 10px;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button */
+.month .prev a {
+    float: left;
+    color: white;
+}
+/* Month name */
+.month .name {
+    text-align: center;
+}
+
+/* Next button */
+.month .next a {
+    float: right;
+    color: white;
+}
+
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    /*padding: 10px 0;*/
+}
+
+.weekdays td {
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    /*padding: 10px 0;*/
+    /*margin: 0;*/
+}
+
+.days td {
+    /*list-style-type: none;*/
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:16px;
+}
+
+.days a {
+    color: black;
+}
+
+/* Highlight the "current" day */
+.days .active a {
+    border-radius: 100%;
+    background: #006699;
+    color: white;
+}
+

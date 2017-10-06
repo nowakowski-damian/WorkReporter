@@ -1,0 +1,126 @@
+/* DASHBOARD */
+
+.calendar {
+    float: left;
+    margin-right: 5%;
+    background-color: #006699;
+}
+
+#user_dashboard_report_table {
+    display: inline-block;
+    width: 70%;
+}
+
+#user_dashboard_report_table table{
+    width: 100%;
+}
+
+#user_dashboard_main_section {
+    min-height: 300px;
+}
+
+/* ADD REPORT */
+
+
+
+#user_add_report_container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    max-height:85%;
+    overflow-y: auto;
+}
+
+#user_add_report_table {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+#user_add_report_table tr {
+    background-color: transparent;
+    font-size: 20px;
+}
+
+
+#user_add_report_table select{
+    border: solid black 1px;
+    height: auto;
+    font-size: 75%;
+    width: 100%;
+}
+
+#user_add_report_table input{
+    height: auto;
+    font-size: 75%;
+    width: 100%;
+}
+
+#user_add_report_buttons {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#user_add_report_buttons input {
+    margin-top: 5px;
+}
+
+/* AFFIRMATION */
+
+#user_affirmation_main_container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    max-height:85%;
+    overflow-y: auto;
+}
+
+#user_affirmation_container {
+    background: #f0f0f0;
+    padding: 10px;
+}
+
+#user_affirmation_container h1 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+#user_affirmation_container form {
+    text-align: center;
+}
+
+#user_affirmation_container input[type=submit]{
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    width: 40%;
+}
+
+/* VACATION */
+
+#user_add_vacation_main_container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#user_add_vacation_table {
+    width: 100%;
+}
+
+#user_add_vacation_container {
+    border: solid 1px black;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: inline-table;
+    width: 75%;
+}
+
+#vacation_dates_container {
+    display: inline-table;
+    width: 20%;
+}

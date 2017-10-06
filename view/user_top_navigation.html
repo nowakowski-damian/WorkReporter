@@ -1,0 +1,16 @@
+<?php
+        $db =  new DatabaseManager();
+        $userId = $_SESSION[Session::LOGGED_USER]->getId();
+        $isAffirmed = $db->getTodayAffirmation($userId) != null;
+        $db->closeConnetion();
+        $db=null;
+?>
+
+<div class="top-nav">
+    <a href="user_dashboard.php">Dashboard</a>
+    <a href="user_add_report.php">Report</a>
+    <a href="user_add_vacation.php">Vacation</a>
+    <a <?php if(!$isAffirmed) { echo "class='navigation_button_red'"; } ?> href="user_affirmation.php">Affirm</a>
+    <a class="sign-out" href="action/logout.php">  <i class="icon-sign-out" aria-hidden="true"></i> Logout</a>
+    <a class="logged-user">  <i class="icon-user" aria-hidden="true"></i> <?php echo $_SESSION[Session::LOGGED_USER]->getLogin(); ?></a>
+</div>
